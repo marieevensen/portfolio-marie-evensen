@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05070d"/>
+      <stop offset="1" stop-color="#0d1a24"/>
+    </linearGradient>
+    <linearGradient id="aurora" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5dffb0" stop-opacity="0"/>
+      <stop offset=".6" stop-color="#5dffb0" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#5dffb0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#sky)"/>
+  <g fill="#fff">
+    <circle cx="90" cy="70" r="1.5"/><circle cx="310" cy="40" r="1"/><circle cx="520" cy="110" r="1.5"/>
+    <circle cx="760" cy="60" r="1"/><circle cx="980" cy="90" r="1.5"/><circle cx="1130" cy="30" r="1"/>
+    <circle cx="200" cy="160" r="1"/><circle cx="680" cy="180" r="1"/><circle cx="1060" cy="200" r="1"/>
+  </g>
+  <path d="M0 330 C200 180 360 300 560 210 S900 150 1200 260 L1200 420 C900 330 700 400 560 360 S200 420 0 460Z" fill="url(#aurora)"/>
+  <path d="M0 380 C240 260 420 360 640 290 S980 250 1200 330" stroke="#a8ffd6" stroke-opacity=".5" stroke-width="2" fill="none"/>
+  <path d="M0 600 L0 500 L140 440 L260 490 L400 420 L560 480 L700 430 L860 490 L1000 450 L1200 500 L1200 600Z" fill="#020305"/>
+  <g font-family="Helvetica, Arial, sans-serif" fill="#fff">
+    <text x="60" y="540" font-size="22" opacity=".6">Tromsø · tonight</text>
+    <text x="60" y="580" font-size="14" opacity=".4">Aurora forecast</text>
+    <text x="1140" y="565" font-size="64" text-anchor="end" font-weight="300">Kp 5</text>
+  </g>
+</svg>

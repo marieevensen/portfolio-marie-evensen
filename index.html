@@ -7,47 +7,22 @@
   <meta name="description" content="Portfolio of Marie Evensen">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="blob" aria-hidden="true"></div>
-
-  <header class="nav">
-    <a href="#" class="logo">ME</a>
-    <nav>
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
   <main>
-    <section class="hero">
-      <p class="eyebrow">Portfolio — 2026</p>
-      <h1>Hi, I'm <em>Marie Evensen</em>.</h1>
-      <p class="lead">I make things for the web. This site is a work in progress — more coming soon.</p>
-    </section>
+    <header>
+      <h1>Marie Evensen</h1>
+      <p class="muted">I make things for the web.</p>
+    </header>
 
     <section id="work">
-      <h2>Selected work</h2>
-      <div class="grid">
-        <article class="card">
-          <span class="tag">Project</span>
-          <h3>Project one</h3>
-          <p>A short description of what this was and what you did.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Project</span>
-          <h3>Project two</h3>
-          <p>A short description of what this was and what you did.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Project</span>
-          <h3>Project three</h3>
-          <p>A short description of what this was and what you did.</p>
-        </article>
-      </div>
+      <h2>Work</h2>
+      <ul class="list projects">
+        <li data-preview="previews/nordlys.svg"><a href="#">Nordlys — aurora forecast app</a><span class="muted">2026</span></li>
+        <li data-preview="previews/fjord.svg"><a href="#">Fjord Serif — typeface specimen</a><span class="muted">2025</span></li>
+      </ul>
     </section>
 
     <section id="about">
@@ -57,16 +32,19 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Want to say hi? <a href="mailto:hello@example.com">hello@example.com</a></p>
-      <p class="links">
-        <a href="https://github.com/marieevensen">GitHub</a>
-        <a href="#">LinkedIn</a>
-      </p>
+      <ul class="list">
+        <li><a href="mailto:hello@example.com">Email</a><span class="muted">hello@example.com</span></li>
+        <li><a href="https://github.com/marieevensen">GitHub</a><span class="muted">@marieevensen</span></li>
+        <li><a href="#">LinkedIn</a><span class="muted">—</span></li>
+      </ul>
     </section>
+
+    <footer class="muted">© <span id="year"></span></footer>
   </main>
 
-  <footer>© <span id="year"></span> Marie Evensen</footer>
+  <div class="lens" aria-hidden="true"></div>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="telescope.js"></script>
 </body>
 </html>
