@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <rect width="600" height="800" fill="#ebe6dc"/>
+  <text x="300" y="560" font-family="Georgia, 'Times New Roman', serif" font-size="520" text-anchor="middle" fill="#1a1a1a">Ø</text>
+  <text x="40" y="760" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1a1a1a" opacity=".5">U+00D8</text>
+</svg>

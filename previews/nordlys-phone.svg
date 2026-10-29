@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <defs>
+    <linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#04060b"/><stop offset="1" stop-color="#10222c"/></linearGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5dffb0"/><stop offset="1" stop-color="#7b6cff"/></linearGradient>
+    <filter id="b"><feGaussianBlur stdDeviation="30"/></filter>
+  </defs>
+  <rect width="600" height="800" fill="#d9dde0"/>
+  <rect x="150" y="90" width="300" height="620" rx="44" fill="#0b0b0d"/>
+  <rect x="162" y="102" width="276" height="596" rx="34" fill="url(#s)"/>
+  <ellipse cx="300" cy="300" rx="160" ry="60" fill="url(#a)" opacity=".7" filter="url(#b)"/>
+  <g font-family="Helvetica, Arial, sans-serif" fill="#fff">
+    <text x="190" y="160" font-size="14" opacity=".6">TROMSØ</text>
+    <text x="190" y="520" font-size="96" font-weight="300">Kp 5</text>
+    <text x="190" y="560" font-size="16" opacity=".6">High chance after 22:00</text>
+    <rect x="190" y="610" width="220" height="2" fill="#fff" opacity=".2"/>
+    <rect x="190" y="610" width="150" height="2" fill="#5dffb0"/>
+  </g>
+</svg>
