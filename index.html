@@ -10,35 +10,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <!-- Intro screen: slides up on click, scroll or after a few seconds -->
-  <div class="intro" id="intro">
-    <div class="intro-row">
-      <span>Portfolio<br><span class="soft">2026</span></span>
-      <span class="intro-name">Marie Evensen</span>
-      <span>Design &amp; web<br><span class="soft">Based in Norway</span></span>
-    </div>
-    <span class="intro-hint">Click to enter</span>
-  </div>
+<body data-view="work">
+  <!-- Soft fades so content disappears under the top and bottom edges -->
+  <div class="fade top" aria-hidden="true"></div>
+  <div class="fade bottom" aria-hidden="true"></div>
 
-  <!-- Draggable field of project images -->
-  <div class="field" id="field" aria-hidden="true"></div>
-
-  <!-- Four corners + centre -->
   <header class="corner tl">
     <button data-open="about">About</button>
     <a href="mailto:hello@example.com">Contact</a>
   </header>
-  <a class="corner tc name" href="#">Marie<br>Evensen</a>
-  <nav class="corner tr">
-    <a href="https://github.com/marieevensen">GitHub</a>
-  </nav>
-  <div class="corner bl" id="caption">Design &amp; web</div>
-  <div class="corner br"><span><span id="clock"></span> in Norway</span></div>
 
-  <!-- About panel -->
+  <a class="corner tc" href="#" data-view-link="work">Marie<br>Evensen</a>
+
+  <nav class="corner tr toggle" aria-label="View">
+    <button data-view-link="work" aria-pressed="true">Work</button>
+    <button data-view-link="index" aria-pressed="false">Index</button>
+  </nav>
+
+  <div class="corner bl">Design &amp; web</div>
+  <div class="corner br"><span>Norway <span class="soft" id="clock"></span></span></div>
+
+  <!-- Work: one project after another down the middle -->
+  <main class="work" id="work"></main>
+
+  <!-- Index: plain list of projects -->
+  <main class="index" id="index">
+    <ul id="index-list"></ul>
+  </main>
+
+  <!-- Label that follows the cursor over a project -->
+  <div class="label" id="label" aria-hidden="true"></div>
+
+  <!-- About -->
   <section class="about" id="about" hidden>
-    <button class="corner tr" data-close>Close</button>
     <div class="about-body">
       <p>Marie Evensen is a designer and developer making brands, websites and small digital tools. This text is a placeholder — write a few lines about yourself here.</p>
       <ul>
@@ -49,14 +53,6 @@
     </div>
   </section>
 
-  <!-- Plain list for screen readers and no-JS -->
-  <ul class="sr-only">
-    <li>Nordlys — aurora forecast app, 2026</li>
-    <li>Fjord Serif — typeface, 2025</li>
-    <li>Salt — ceramics identity, 2024</li>
-    <li>Mørketid — photo series, 2023</li>
-  </ul>
-
-  <script src="field.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
